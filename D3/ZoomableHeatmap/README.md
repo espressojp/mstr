@@ -12,7 +12,7 @@
 
 **Original Visualization Source Link:** 
 
-**Usage:** This visualization needs 2 or more attributes and 1 metric.
+**Usage:** This visualization needs 1 or more attributes and 1 metric.
 
 **Description:** A zoom-able Heatmap expand the clicked category to the full size. TN244491 explains how it works.
 
