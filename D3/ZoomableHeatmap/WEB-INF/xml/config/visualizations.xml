@@ -8,6 +8,6 @@
       <!--     2  Report grids in documents --> 
       <!--    16  VI dashboards -->
       <!--style-name is the name of the style used to render the visualization. Replace "visualization rendering style" with the name of the style in styleCatalog.xml that renders the visualization-->
-      <visualization id="MstrVisTest1" desc="Zoomable Heatmap" is-mojo="true" scope="18" style-name="MstrVisTest1Style"/>
+      <visualization id="ZoomableHeatmap" desc="Zoomable Heatmap" is-mojo="true" scope="18" style-name="ZoomableHeatmapStyle"/>
    </visualization-list>
 </visualizations>

@@ -3,21 +3,21 @@
  */
 (function () {
     // Define this code as a plugin in the mstrmojo object
-    if (!mstrmojo.plugins.MstrVisTest1) {
-        mstrmojo.plugins.MstrVisTest1 = {};
+    if (!mstrmojo.plugins.ZoomableHeatmap) {
+        mstrmojo.plugins.ZoomableHeatmap = {};
     }
     // All mojo visualization require the CustomVisBase library to render
     mstrmojo.requiresCls("mstrmojo.CustomVisBase",
                          "mstrmojo.models.template.DataInterface"
                         );
     // Declare the visualization object
-    mstrmojo.plugins.MstrVisTest1.MstrVisTest1 = mstrmojo.declare(
+    mstrmojo.plugins.ZoomableHeatmap.ZoomableHeatmap = mstrmojo.declare(
         // Declare that this code extends CustomVisBase
         mstrmojo.CustomVisBase,
         null,
         {
             // Define the JavaScript class that renders your visualization as mstrmojo.plugins.{plugin name}.{js file name}
-            scriptClass: 'mstrmojo.plugins.MstrVisTest1.MstrVisTest1',
+            scriptClass: 'mstrmojo.plugins.ZoomableHeatmap.ZoomableHeatmap',
             externalLibraries: [{url: "http://d3js.org/d3.v3.min.js"}],
             plot: function () {
  	            console.log("ZoomTree:starting...");
