@@ -2,6 +2,8 @@ package jp.co.microstrategy.com.sdk.test;
 
 import java.io.FileOutputStream;
 
+import com.microstrategy.web.beans.BeanFactory;
+import com.microstrategy.web.beans.RWBean;
 import com.microstrategy.web.objects.WebIServerSession;
 import com.microstrategy.web.objects.WebObjectsException;
 import com.microstrategy.web.objects.WebObjectsFactory;
@@ -28,12 +30,15 @@ public class ExportRWtoCSV {
 		   
 		RWInstance rwi = null;
 		try { 
-            rwi = factory.getRWSource().getNewInstance("6A8AC5084649AEB72936CAB04F484DA4");
+			RWBean rwb = (RWBean)BeanFactory.getInstance().newBean("RWBean");    
+            rwb.setSessionInfo(serverSession);
+			rwb.setObjectID("6A8AC5084649AEB72936CAB04F484DA4");
+			rwi = rwb.getRWInstance();
 	        rwi.setExecutionMode(EnumRWExecutionModes.RW_MODE_CSV);
-
             rwi.setAsync(false);
+			rwb.refresh(false, true);
             int status = rwi.pollStatus();
-            
+			
             RWExportSettings expSet = rwi.getExportSettings();
             expSet.setGridKey("K44");
            
