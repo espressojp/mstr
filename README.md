@@ -7,3 +7,6 @@ This repository stores the codes used for testing. Some codes are published as a
 
 * D3/ZoomableHeatmap (Merged to mstr-dev/Visualization-Plugins)  
 [TN244491: How to show a zoom-able Heatmap by integrating D3 Visualization in Visual Insight Dashboard in MicroStrategy Web 10? ](http://community.microstrategy.com/t5/SDK/TN244491-How-to-show-a-zoom-able-Heatmap-by-integrating-D3/ta-p/244491)
+
+* C#/Form_Rpt.cs  
+[TN223949: How to retrieve report SQL using MicroStrategy Intelligence Server SDK 9.x with C#?](http://community.microstrategy.com/t5/SDK/TN223949-How-to-retrieve-report-SQL-using-MicroStrategy/ta-p/223949)
