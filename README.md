@@ -10,3 +10,6 @@ This repository stores the codes used for testing. Some codes are published as a
 
 * C#/Form_Rpt.cs  
 [TN223949: How to retrieve report SQL using MicroStrategy Intelligence Server SDK 9.x with C#?](http://community.microstrategy.com/t5/SDK/TN223949-How-to-retrieve-report-SQL-using-MicroStrategy/ta-p/223949)
+
+* D3/C3chart_scatter  
+[TN267668: How to show a Scatter Plot using C3.js library in Visual Insight Dashboard in MicroStrategy Web 10.x?](http://community.microstrategy.com/t5/SDK/TN267668-How-to-show-a-Scatter-Plot-using-C3-js-library-in/ta-p/267668)
