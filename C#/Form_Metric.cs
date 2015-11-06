@@ -56,17 +56,17 @@ namespace WindowsFormsApplication1
 
                     IDSSDimty ab = metric.Dimensionality;
 
-                       // base report level
+                    // Base report level
                     if (metric.Dimensionality.Item(key).UnitType.Equals(EnumDSSDimtyUnitType.DssDimtyUnitTypeReportBaseLevel))
                     {
-                        Console.WriteLine("Base report level / "
+                        Console.WriteLine("Report Level / "
                             + metric.Dimensionality.Item(key).Filtering.ToString()
                             + " / "
                             + metric.Dimensionality.Item(key).GroupBy.ToString());
 
 
                     }
-                        // attribute
+                    // attribute
                     else if (metric.Dimensionality.Item(key).UnitType.Equals(EnumDSSDimtyUnitType.DssDimtyUnitTypeAttribute))
                     {
                         Console.WriteLine(((IDSSAttribute)metric.Dimensionality.Item(key).Target).Info.Name
@@ -75,10 +75,18 @@ namespace WindowsFormsApplication1
                             + " / "
                             + metric.Dimensionality.Item(key).GroupBy.ToString());
                     }
+                    // hierarchy
+                    else if (metric.Dimensionality.Item(key).UnitType.Equals(EnumDSSDimtyUnitType.DssDimtyUnitTypeDimension))
+                    {
+                        Console.WriteLine(((IDSSDimension)metric.Dimensionality.Item(key).Target).Info.Name
+                            + " / "
+                            + metric.Dimensionality.Item(key).Filtering.ToString()
+                            + " / "
+                            + metric.Dimensionality.Item(key).GroupBy.ToString());
+                    }
                     else
                     {
-                        // dimension, report level
-
+                        // DssDimtyUnitTypeRole
                     }
                 }
 
@@ -112,7 +120,6 @@ namespace WindowsFormsApplication1
                 foreach (IDSSRole oRole in oSource.ExecuteSearch(oSearch, 0, null, null, 0, 0))
                 {
                     Console.WriteLine("Transformation:" + oRole.Info.Name);
-                    break;
                 }
 
                 con1.close();
