@@ -13,3 +13,6 @@ This repository stores the codes used for testing. Some codes are published as a
 
 * D3/C3chart_scatter  
 [TN267668: How to show a Scatter Plot using C3.js library in Visual Insight Dashboard in MicroStrategy Web 10.x?](http://community.microstrategy.com/t5/SDK/TN267668-How-to-show-a-Scatter-Plot-using-C3-js-library-in/ta-p/267668)
+
+* C#/Form_Metric.cs  
+[TN269417: How to retrieve metric definition using MicroStrategy Intelligence Server SDK 9.x with C#?](http://community.microstrategy.com/t5/SDK/TN269417-How-to-retrieve-metric-definition-using-MicroStrategy/ta-p/269417)
